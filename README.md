@@ -52,7 +52,9 @@ To run the program, write this on the terminal
 ```bash
 python dynamic-neural-engine
 ```
-
+1. First the program will ask number of neurons in each layer
+2. Then it will ask number of hidden layers for the network
+3. Finally the model will show the loss values for training a full adder within 10000 iterations.
 
 
 
