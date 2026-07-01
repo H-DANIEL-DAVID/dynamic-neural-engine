@@ -45,7 +45,7 @@ pip install numpy
 Open your terminal and write the below lines:
 ```bash
 git clone https://github.com/DanielDavid-H/dynamic-neural-engine.git
-cd dynamic-neural-engine.py
+cd dynamic-neural-engine.git
 ```
 ### 3. Running the program
 To run the program, write this on the terminal 
