@@ -45,12 +45,12 @@ pip install numpy
 Open your terminal and write the below lines:
 ```bash
 git clone https://github.com/DanielDavid-H/dynamic-neural-engine.git
-cd dynamic-neural-engine.git
+cd dynamic-neural-engine
 ```
 ### 3. Running the program
 To run the program, write this on the terminal 
 ```bash
-python dynamic-neural-engine
+python dynamic-neural-engine.py
 ```
 1. First the program will ask number of neurons in each layer
 2. Then it will ask number of hidden layers for the network
