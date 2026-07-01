@@ -36,9 +36,9 @@ The model utilizes a non-linear combination of **Leaky ReLU** for hidden layer f
 
 ## Goals of the project
 
-*To see how a neural network actually works on the inside without using libraries like pytorch or tensorflow.
-*To experiment with how changing the networks length and width actually translates to learning without problems like the vanishing gradient problem.
-*To see nestorov accelerated momentum in action to see how it is different from standard heavy momentum which can overshoot over the loss valley and smartly looks ahead before actually jumping.
+* To see how a neural network actually works on the inside without using libraries like pytorch or tensorflow.
+* To experiment with how changing the networks length and width actually translates to learning without problems like the vanishing gradient problem.
+* To see nestorov accelerated momentum in action to see how it is different from standard heavy momentum which can overshoot over the loss valley and smartly looks ahead before actually jumping.
 
 ## 🚀 Installation & Execution
 
