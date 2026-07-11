@@ -46,11 +46,12 @@ The model utilizes a non-linear combination of **Leaky ReLU** for hidden layer f
 Ensure you have Python installed along with the core numerical computation library:
 ```bash
 pip install numpy
+pip install matplotlib
 ```
 ### 2. installing on your machine
 Open your terminal and write the below lines:
 ```bash
-git clone https://github.com/DanielDavid-H/dynamic-neural-engine.git
+git clone https://github.com/DanielDavid-H/dynamic-neural-engine.py
 cd dynamic-neural-engine
 ```
 ### 3. Running the program
