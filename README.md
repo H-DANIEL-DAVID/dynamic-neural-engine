@@ -51,7 +51,7 @@ pip install matplotlib
 ### 2. installing on your machine
 Open your terminal and write the below lines:
 ```bash
-git clone https://github.com/H-DANIEL-DAVID/dynamic-neural-engine.py
+git clone https://github.com/H-DANIEL-DAVID/dynamic-neural-engine
 cd dynamic-neural-engine
 ```
 ### 3. Running the program
