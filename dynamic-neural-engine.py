@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 class NN:
     def __init__(self,inp,hid,out,l):
         self.w_lst = []
@@ -10,6 +11,7 @@ class NN:
         self.h_lst = []
         self.z_lst = []
         self.de_lst = []
+        self.loss_lst = []
         for i in range(0,l+1):
             if i ==0:
                 w = np.random.randn(inp,hid)*np.sqrt(2/inp)
@@ -92,13 +94,22 @@ class NN:
                 self.b_lst[m]-=self.bv_lst[m]
             if i %1000 ==0:
                 l = np.mean(np.square(y_pred - y))
+                self.loss_lst.append(l)
                 print(f"the loss is {l}")
             self.de_lst=[]
             self.h_lst=[]
             self.z_lst=[]
+    def loss(self):
+        plt.plot(self.loss_lst)
+        plt.grid(True)
+        plt.xlabel("Loss")
+        plt.ylabel("Number of iterations")
+        plt.title("Loss graph over 10000 iterations")
+        plt.show()
 x = np.array([[0,0,0],[0,0,1],[0,1,0],[1,0,0],[0,1,1],[1,0,1],[1,1,0],[1,1,1]])
 y = np.array([[0,0],[1,0],[1,0],[1,0],[0,1],[0,1],[0,1],[1,1]])
 a = int(input("enter number of neurons in each hidden layer:"))
 b = int(input("enter number of hidden layers:"))
 model = NN(3,a,2,b)
 model.train(x,y)
+model.loss()
