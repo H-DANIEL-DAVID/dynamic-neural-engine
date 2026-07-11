@@ -52,7 +52,7 @@ class NN:
         return 1/(1+np.exp(-x))
     def sigmoid_derivative(self,x):
         return x*(1-x)
-    def train(self,x,y,lr = 0.1,g=0.9,epochs = 10000):
+    def train(self,x,y,lr = 0.01,g=0.9,epochs = 10000):
         for i in range(epochs):
             for j in range(len(self.w_lst)):
                 self.wf_lst[j] = self.w_lst[j] - self.v_lst[j]*g
@@ -86,6 +86,7 @@ class NN:
             for m in range(1,len(self.w_lst)):
                 grad = self.z_lst[m-1].T@self.de_lst[m]
                 self.v_lst[m] = grad*lr + self.v_lst[m]*g
+                self.w_lst[m]-=self.v_lst[m]
                 grad = np.sum(self.de_lst[m],axis = 0,keepdims= True)
                 self.bv_lst[m] = grad*lr + self.bv_lst[m]*g
                 self.b_lst[m]-=self.bv_lst[m]
