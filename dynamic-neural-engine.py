@@ -1,5 +1,4 @@
 import numpy as np
-import numpy as np
 class NN:
     def __init__(self,inp,hid,out,l):
         self.w_lst = []
