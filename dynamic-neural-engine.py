@@ -96,7 +96,7 @@ class NN:
             self.h_lst=[]
             self.z_lst=[]
 x = np.array([[0,0,0],[0,0,1],[0,1,0],[1,0,0],[0,1,1],[1,0,1],[1,1,0],[1,1,1]])
-y = np.array([[0,0],[1,0],[1,0],[1,0],[0,1],[0,1],[0,1],[1,1])
+y = np.array([[0,0],[1,0],[1,0],[1,0],[0,1],[0,1],[0,1],[1,1]])
 a = int(input("enter number of neurons in each hidden layer:"))
 b = int(input("enter number of hidden layers:"))
 model = NN(3,a,2,b)
